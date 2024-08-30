@@ -1,6 +1,7 @@
 <?php 
 
 include("include-template-view.php");
+$page = new Page();
 $template = new Template();
 
 $option_header = [
@@ -9,8 +10,11 @@ $option_header = [
 	"charset" => "utf-8"
 ];
 
-$template->Header($option_header);
+$page->Header($option_header);
 
-$template->Footer();
+$template->Set_Template("two-column-20-80");
+echo $template->Get_Template();
+
+$page->Footer();
 
 ?>

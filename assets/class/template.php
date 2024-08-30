@@ -2,36 +2,53 @@
 
 class Template{
     
-    /*
-        @param string $title set description tag title
-        @param string $lang set localization page 
-        @param string $charset set charset page 
-    */
-	function Header($options = []){ 
+    private $template_page_name = "one-direction";
 
-		$title = $options['title'] ?? "My Template";
-		$lang = $options['lang'] ?? "en";
-		$charset = $options['charset'] ?? "utf-8";
-        
-        require_once("src/view/header.php");
+    function Add_Html_Menu(){
 
-	}
-
-	function Footer(){
-        
-        require_once("src/view/footer.php");
-
-	}
-
-	function Add_Html_Menu(){
-
-	}
+    }
     
     function Add_Html_Footer(){
 
     }
 
-    function set_template(){
+    public function Set_Template($name_template = "one-direction"){
+        
+        switch ($name_template){
+            case 'one-direction':
+                $this->template_page_name = "one-direction";
+                break;
+            case 'two-column-20-80':
+                $this->template_page_name = "two-column-20-80";
+                break;
+            case 'two-column-80-20':
+                $this->template_page_name = "two-column-80-20";
+                break;
+            case 'two-column-70-30':
+                $this->template_page_name = "two-column-70-30";
+                break;
+            case 'two-column-30-70':
+                $this->template_page_name = "two-column-30-70";
+                break;
+            case 'two-column-60-40':
+                $this->template_page_name = "two-column-60-40";
+                break;
+            case 'two-column-40-60':
+                $this->template_page_name = "two-column-40-60";
+                break;
+            default:
+                $this->template_page_name = "one-direction";
+        }    
+
+    }
+    
+    public function Get_Template(){
+        
+        return $this->template_page_name;
+
+    }
+
+    function Add_HTML_Componente($title, $style = []){
 
     }
 

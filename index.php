@@ -11,9 +11,7 @@ $option_header = [
 ];
 
 $page->Header($option_header);
-
 $template->Set_Template("two-column-20-80");
-echo $template->Get_Template();
 
 $page->Footer();
 

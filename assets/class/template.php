@@ -3,8 +3,9 @@
 class Template{
     
     private $template_page_name = "one-direction";
+    private $list_head_tags = [];
 
-    function Add_Html_Menu(){
+    function Add_Html_Menu($title, $icon_path, $links = []){
 
     }
     
@@ -48,7 +49,11 @@ class Template{
 
     }
 
-    function Add_HTML_Componente($title, $style = []){
+    public function Add_Html_Componente($title, $style = [], $align){
+
+    }
+
+    public function List_Html_Componente(){
 
     }
 

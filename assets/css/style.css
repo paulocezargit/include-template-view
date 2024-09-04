@@ -3,19 +3,31 @@ body{
 	padding: 0;
 }
 
+.i-border-radius-2{ border-radius: 2px; }
+.i-border-radius-4{ border-radius: 4px; }
+.i-border-radius-6{ border-radius: 6px; }
+.i-border-radius-8{ border-radius: 8px; }
+.i-border-radius-10{ border-radius: 10%; }
+.i-border-radius-30{ border-radius: 30%; }
+.i-border-radius-40{ border-radius: 40%; }
+.i-border-radius-50{ border-radius: 50%; }
+.i-border-radius-100{ border-radius: 100%; }
+
+.i-border-theme{ border: 1px solic #ccc; }
+
 @media (max-width: 1224px){
    
-   .i-grid-2{ display:grid; grid-template-columns: 50% 50%; }
-   .i-grid-4{ display:grid; grid-template-columns: 25% 25% 25% 25%; }
-   .i-grid-6{ display:grid; grid-template-columns: 16.7% 16.7% 16.6% 16.6% 16.7% 16.7%; }
-   .i-grid-8{ display:grid; grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%; }
-   .i-grid-10{ display:grid; grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; }
-   .i-grid-20-80{ display:grid; grid-template-columns: 20% 80%; }
-   .i-grid-80-20{ display:grid; grid-template-columns: 80% 20%; }
-   .i-grid-30-70{ display:grid; grid-template-columns: 30% 70%; }
-   .i-grid-70-30{ display:grid; grid-template-columns: 70% 30%; }
-   .i-grid-40-60{ display:grid; grid-template-columns: 40% 60%; }
-   .i-grid-60-40{ display:grid; grid-template-columns: 60% 40%; }
+   .i-grid-2{ display:grid; grid-template-columns: 1fr 1fr; }
+   .i-grid-4{ display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; }
+   .i-grid-6{ display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+   .i-grid-8{ display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+   .i-grid-10{ display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+   .i-grid-20-80{ display:grid; grid-template-columns: 2fr 8fr; }
+   .i-grid-80-20{ display:grid; grid-template-columns: 8fr 2fr; }
+   .i-grid-30-70{ display:grid; grid-template-columns: 3fr 7fr; }
+   .i-grid-70-30{ display:grid; grid-template-columns: 7fr 3fr; }
+   .i-grid-40-60{ display:grid; grid-template-columns: 4fr 6fr; }
+   .i-grid-60-40{ display:grid; grid-template-columns: 6fr 4fr; }
 
 }
 
